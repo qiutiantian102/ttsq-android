@@ -5,6 +5,7 @@ import { AppState } from 'react-native';
 import { AuthProvider, useAuth } from './src/auth/AuthContext';
 import AppNavigator from './src/navigation/AppNavigator';
 import { ToastProvider } from './src/components/Toast';
+import VersionCheck from './src/components/VersionCheck';
 import { theme } from './src/theme';
 
 // 当 App 从后台回到前台时，刷新当前用户资料，保证头像/状态/权限保持新鲜。
@@ -26,6 +27,7 @@ export default function App() {
         <ToastProvider>
           <AppStateRefresh />
           <AppNavigator />
+          <VersionCheck />
           <StatusBar style="light" backgroundColor={theme.bg} />
         </ToastProvider>
       </AuthProvider>
