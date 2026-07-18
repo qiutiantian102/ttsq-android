@@ -24,6 +24,9 @@ export interface User {
   lastLoginLocation?: string | null;
   lastLoginAt?: string | null;
   lastActiveAt?: string | null;
+  registerIp?: string | null;
+  registerLocation?: string | null;
+  registerAt?: string | null;
   statusType?: string | null;
   statusText?: string | null;
 }
