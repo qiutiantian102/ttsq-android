@@ -2,7 +2,7 @@
   "expo": {
     "name": "TTSQ",
     "slug": "ttsq",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "scheme": "ttsq",
     "userInterfaceStyle": "automatic",
@@ -19,6 +19,7 @@
     },
     "android": {
       "package": "cn.qiuht.ttsq",
+      "versionCode": 2,
       "permissions": [
         "INTERNET"
       ],
