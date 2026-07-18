@@ -50,8 +50,10 @@ const DIRECT_API = 'https://ttsq-api.qiutiantian102.workers.dev/api';
 
 // Mobile apps (React Native / WeChat) default to proxy, because .workers.dev
 // is often unreachable inside mainland China without a VPN. The web app already
-// defaults to proxy.qiuht.cn for the same reason. Override with setApiBase().
-let apiBase = DEFAULT_PROXY;
+// defaults to proxy.qiuht.cn/api for the same reason. Override with setApiBase().
+// IMPORTANT: the base MUST include the `/api` suffix, otherwise every request
+// 404s (the Worker routes are mounted under /api). This matches app/src/lib/api.ts.
+let apiBase = DEFAULT_PROXY + '/api';
 
 /** Override the API base (e.g. a custom proxy or self-hosted backend). */
 export function setApiBase(url: string) {
