@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "TTSQ",
+    "slug": "ttsq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ttsq",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#7c3aed"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "cn.qiuht.ttsq",
+      "permissions": [
+        "INTERNET"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "backgroundColor": "#0ea5e9"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "abc4622a-b99a-4a4b-bd3e-c93b37a251fc"
+      }
+    }
+  }
+}
