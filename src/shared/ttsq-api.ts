@@ -294,6 +294,9 @@ export const api = {
     update: (data: any, actorId?: string) => apiFetch<{ success: boolean }>('/turkey-config', { method: 'PUT', body: { ...data, actorId } }),
   },
 
+  appVersion: () =>
+    apiFetch<{ version: string; releaseUrl: string; downloadUrl: string; publishedAt: string; notes: string }>('/app-version'),
+
   game: {
     leaderboard: (game: string, scope: 'daily' | 'all' = 'daily') =>
       apiFetch<{ scope: string; date?: string; scores: GameScore[] }>(
